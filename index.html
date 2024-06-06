@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title> Motivation Message Wallah Application by Sanskar </title>
+	<style>
+		* { font-size : 40px ; font-family : Times New Roman ; }
+		body { background-color : #FAFAD2 ; }
+	</style>
+</head>
+<body>
+<center>
+	<h1> Motivation Message Wallah Application </h1>
+	<h2 id = "msg" />
+
+	<script>
+		function show()
+		{
+			let msg = document.getElementById("msg");
+
+			let messages = [
+			"The only limit to our realization of tomorrow is our doubts of today.",
+"Success is not final, failure is not fatal: It is the courage to continue that counts" ,
+ "The journey of a thousand miles begins with one step.",
+"Hardships often prepare ordinary people for an extraordinary destiny.",
+"Keep your face always toward the sunshine—and shadows will fall behind you.",
+"The future belongs to those who believe in the beauty of their dreams."
+];
+			
+			let r = parseInt(Math.random()*messages.length);
+			msg.innerHTML = messages[r] ;
+			}
+
+			show();
+
+			setInterval(show , 5000);
+		
+
+	</script>
+</center>
+</body>
+</html>
